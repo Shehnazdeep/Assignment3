@@ -18,4 +18,6 @@
     <string name="due_date">Due Date</string>
     <string name="done_flag">Done Flag</string>
     <string name="add">Add</string>
+    <string name="delete_to_do">Delete To Do</string>
+    <string name="add_more_title_info">Add more title info!</string>
 </resources>
