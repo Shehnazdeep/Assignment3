@@ -7,5 +7,5 @@ data class Title(
     val title: String = "",
     val description: String = "",
     val doneFlag: Boolean = false,
-    val dueDate: Date
+    val dueDate: Date = Date()
 )

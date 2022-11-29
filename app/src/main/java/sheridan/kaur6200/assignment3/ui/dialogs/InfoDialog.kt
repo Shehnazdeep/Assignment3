@@ -1,4 +1,4 @@
-package sheridan.kaur6200.assignment3.dialogs
+package sheridan.kaur6200.assignment3.ui.dialogs
 
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog

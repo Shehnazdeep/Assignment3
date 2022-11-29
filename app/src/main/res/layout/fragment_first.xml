@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".home.FirstFragment">
+    tools:context=".ui.editTitle.FirstFragment">
 
     <Space
         android:layout_width="match_parent"

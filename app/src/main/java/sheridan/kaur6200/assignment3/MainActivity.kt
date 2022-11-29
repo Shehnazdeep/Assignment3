@@ -13,7 +13,7 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import sheridan.kaur6200.assignment3.databinding.ActivityMainBinding
-import sheridan.kaur6200.assignment3.dialogs.showInfoDialog
+import sheridan.kaur6200.assignment3.ui.dialogs.showInfoDialog
 import androidx.navigation.ui.*
 
 class MainActivity : AppCompatActivity() {

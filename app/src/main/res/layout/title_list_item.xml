@@ -3,6 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <import type="sheridan.kaur6200.assignment3.model.Title"/>
+        <variable name="title" type="sheridan.kaur6200.assignment3.model.Title" />
+    </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -13,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-
+            android:text="@{title.title}"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -26,11 +30,13 @@
             tools:text="To Do" />
 
         <TextView
+
+
             android:id="@+id/description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-
+            android:text="@{title.description}"
             android:layout_marginTop="8dp"
 
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
@@ -43,7 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-
+            dateValue="@{title.dueDate}"
             android:layout_marginStart="240dp"
 
             android:layout_marginTop="8dp"
@@ -58,6 +64,7 @@
             android:layout_marginStart="8dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/description"
+            doneFlagValue="@{title.doneFlag}"
             tools:text="Done Flag" />
 
         <ImageButton
@@ -74,8 +81,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_baseline_clear_24"
             tools:ignore="SpeakableTextPresentCheck" />
-
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -3,6 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+
+
+    <data>
+        <import type="sheridan.kaur6200.assignment3.ui.titlelist.TitleListViewModel"/>
+        <variable
+            name="viewModel"
+            type="TitleListViewModel" />
+    </data>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -20,7 +29,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="8dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-
+                titleCount="@{viewModel.liveTitleList}"
                 tools:ignore="RtlHardcoded"
                 tools:text="3 To Do's" />
 
@@ -36,14 +45,14 @@
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-
+                titleList="@{viewModel.liveTitleList}"
                 tools:listitem="@layout/title_list_item"
                 app:layoutManager="LinearLayoutManager" />
 
         </LinearLayout>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/add_donut_fab"
+            android:id="@+id/add_title_fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"

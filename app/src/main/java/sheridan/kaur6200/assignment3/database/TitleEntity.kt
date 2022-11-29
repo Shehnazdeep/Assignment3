@@ -11,7 +11,6 @@ data class TitleEntity(
 
     @PrimaryKey(autoGenerate = true)
     val id: Long,
-
    val title: String,
     val description: String = "",
 
@@ -19,7 +18,7 @@ data class TitleEntity(
     val doneFlag: Boolean,
 
     @ColumnInfo(name = "due_date")
-    val dueDate: Date
+    val dueDate: Date = Date()
 
 
 
